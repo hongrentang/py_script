@@ -4,7 +4,7 @@ import datetime
 
 if __name__ == '__main__':
 	
-	uri="http://47.94.11.105:9210/"
+	uri=""
 	five_datetime=datetime.datetime.now()+datetime.timedelta(days=-5)
 	five_date=five_datetime.strftime('%Y.%m.%d')
 	five_uri=uri+'*-'+five_date
