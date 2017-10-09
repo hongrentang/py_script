@@ -4,7 +4,7 @@ from aliyunsdkcore import client
 from aliyunsdkcdn.request.v20141111 import RefreshObjectCachesRequest
 
 def refurbish(androidpath,iospath):
-	clt = client.AcsClient('LTAIuUA52dfSVEyb','MolbMjA72mpSEpHnxkBfi3zAcy4GNT','cn-hangzhou')
+	clt = client.AcsClient('','','cn-hangzhou')
 	# 设置参数
 	request = RefreshObjectCachesRequest.RefreshObjectCachesRequest()
 	request.set_accept_format('json')
@@ -26,30 +26,30 @@ if __name__ == '__main__':
 		if  'q' == answer.lower():
 			flag = False
 		elif '0' == answer :
-			android_yyplatform='http://www.yaoyaogame.com/HotUpdate/yyplatform/android/13/'
-			ios_yyplatform='http://www.yaoyaogame.com/HotUpdate/yyplatform/ios/13/'
+			android_yyplatform='url'
+			ios_yyplatform=''
 			refurbish(android_yyplatform,ios_yyplatform)
 
 		elif '1' == answer :
-			android_1001='http://www.yaoyaogame.com/HotUpdate/1001/android/3/'
-			ios_1001='http://www.yaoyaogame.com/HotUpdate/1001/ios/3/'
+			android_1001=''
+			ios_1001=''
 			refurbish(android_1001,ios_1001)			
 
 		elif '2' == answer :
-			android_1002='http://www.yaoyaogame.com/HotUpdate/1002/android/3/'
-			ios_1002='http://www.yaoyaogame.com/HotUpdate/1002/ios/3/'
+			android_1002=''
+			ios_1002=''
 			refurbish(android_1002,ios_1002)
 		elif '3' == answer :
-			android_1003='http://www.yaoyaogame.com/HotUpdate/1003/android/3/'
-			ios_1003='http://www.yaoyaogame.com/HotUpdate/1003/ios/3/'
+			android_1003=''
+			ios_1003=''
 			refurbish(android_1003,ios_1003)
 		elif '4' == answer :
-			android_1004='http://www.yaoyaogame.com/HotUpdate/1004/android/3/'
-			ios_1004='http://www.yaoyaogame.com/HotUpdate/1004/ios/3/'
+			android_1004=''
+			ios_1004=''
 			refurbish(android_1004,ios_1004)
 		elif '5' == answer :
-			android_1005='http://www.yaoyaogame.com/HotUpdate/1005/android/3/'
-			ios_1005='http://www.yaoyaogame.com/HotUpdate/1005/ios/3/'
+			android_1005=''
+			ios_1005=''
 			refurbish(android_1005,ios_1005)
 
 					
